@@ -8,7 +8,7 @@ declare module 'dayjs' {
 
 export function yearPercent(_: any, dayjsClass: any): void {
   dayjsClass.prototype.yearPercent = function(): string {
-    const now = dayjs();
+    const now = this;
     const startOfYear = now.startOf('year');
     const endOfYear = now.endOf('year');
     const elapsedTime = now.diff(startOfYear);

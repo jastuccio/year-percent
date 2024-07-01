@@ -4,12 +4,12 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
-    "start": "node --loader ts-node/esm index.ts"
+    "start": "node --loader ts-node/esm index.ts",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js --config jest.config.js"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "description": "",
   "devDependencies": {
     "@types/jest": "^29.5.12",
